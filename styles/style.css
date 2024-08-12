@@ -5,7 +5,6 @@ body{
     font-family: "Inter", sans-serif;
     background-color: rgb(17, 17, 17);
 }
-
 /* Shared Styles */
 .container{
     width: 80%;
@@ -178,9 +177,58 @@ body{
     font-weight: 400;
 }
 
+/* Change your habit Section Styles */
+.habit-container{
+    margin-top: 100px;
+    margin-bottom: 82px;
+}
+.habit-title{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 11.2px;
+}
+.habit-content{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11.2px;
+    font-weight: 400;
+}
+.habit-types{
+    margin-top: 43px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4rem;
+}
+.habits{
+    max-width: 184px;
+    max-height: 218px; 
+}
+
+.habits img{
+    border: 3px solid black;
+    border-radius: 100px;
+}
+.habits h4{
+    margin-top: 24px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14.4px;
+    font-weight: 600;
+}
+
+.habits h5{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11.2px;
+    font-weight: 400;
+}
+
+
 /* Responsive Design for mobile */
 @media screen and (max-width:576px){
-
+   /* navbar */
     .navbar-container{
         margin-bottom: -60px;
     }
@@ -192,14 +240,16 @@ body{
         display: block;
         color: rgb(255, 255, 255);;
     }
-
+   /* Banner */
     .banner-container{
         flex-direction: column;
+        
     }
     .banner-content{
         width: 280px;
         height: 268px;
         text-align: left;
+        justify-items: center;
     }
     .banner-title{
         width: 228px;
@@ -261,4 +311,23 @@ body{
     .text2{
         font-size: 7px;
     }
+    /* Change Your Habits */
+    .habit-container{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .habit-title{
+       font-size: 25px;
+       margin-bottom: 11.2px;
+    }
+    .habit-types{
+        margin-top: 30px;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .habits{
+        margin-top: 40px;
+    }
+
 }
