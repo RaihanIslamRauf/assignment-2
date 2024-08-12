@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: rgb(17, 17, 17);
+}
+
+/* Shared Styles */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar-container{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-options{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 3rem;
+    color: rgb(255, 255, 255);
+    font-size: 14.4px;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 31.2px; 
+    padding: 3px;
+}
+.brand{
+    font-style: italic;
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 28.8px;
+    font-weight: 800;
+}
+.home{
+    width: 73.6px;
+    height: 30.4px;
+    background-color: rgb(230, 83, 60);
+    border: 1px solid rgb(230, 83, 60);
+    border-radius: 37px;
+    padding: 15px;
+    font-weight: 600;
+}
+.about{
+    margin-right: 15px;
+}
+.hamburger{
+    display: none;
+}
+
+/* Responsive Design for mobile */
+@media screen and (max-width:600px){
+    .navbar-options{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        color: rgb(255, 255, 255);;
+    }
+
+}
