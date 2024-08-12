@@ -180,6 +180,10 @@ body{
 
 /* Responsive Design for mobile */
 @media screen and (max-width:576px){
+
+    .navbar-container{
+        margin-bottom: -60px;
+    }
     
     .navbar-options{
         display: none;
@@ -257,5 +261,4 @@ body{
     .text2{
         font-size: 7px;
     }
-
 }
