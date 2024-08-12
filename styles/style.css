@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
+              
 body{
     font-family: "Inter", sans-serif;
     background-color: rgb(17, 17, 17);
@@ -15,7 +16,7 @@ body{
 .navbar-container{
     margin-top: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 .navbar-options{
@@ -53,14 +54,208 @@ body{
     display: none;
 }
 
+/* Banner Styles */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    max-width: 479px;
+    margin-top: 77.6px;
+}
+.banner-title{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 62.4px;
+    text-align: left;
+    margin-bottom: 22.4px;
+}
+.shape{
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;                                       
+}
+
+.banner-content-text{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12.8px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 22.4px;
+}
+.join-club{
+    border-radius: 33.6px;
+    border: none;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    padding: 12.8px 32px;
+    font-weight: 600;
+    font-size: 14.4px;
+    margin-right: 11.2px;
+    margin-bottom: 61.6px;
+}
+.download{
+    border-radius: 33.6px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    padding: 12.8px 32px;
+    font-weight: 600;
+    font-size: 14.4px;
+    margin-bottom: 61.6px;
+}
+
+.banner-image img{
+    max-width: 349px;
+    max-height: 580px;
+    margin-top: 26.4px;
+    margin-left: 500px;
+    position: relative;
+}
+.card-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 165px;
+    height: 77px;
+    gap: 6.4px;
+    margin-left: 450px;
+    position: absolute;
+    top: 590px;
+}
+.round{
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+    border: none;
+    border: 1px solid rgb(230, 83, 60);
+    background: rgb(230, 83, 60);
+}
+.card1-content{
+    text-align: left;
+}
+.number{
+    color: rgb(250, 250, 249);
+    font-size: 19.2px;
+    font-weight: 900;
+}
+.text{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 12.8px;
+    font-weight: 400;
+}
+
+.card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    width: 154px;
+    height: 78px;
+    position: absolute;
+    margin-left: 730px;
+    top: 300px;
+}
+.card2-content{
+    text-align: left;
+}
+.number2{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.text2{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    font-weight: 400;
+}
+
 /* Responsive Design for mobile */
-@media screen and (max-width:600px){
+@media screen and (max-width:576px){
+    
     .navbar-options{
         display: none;
     }
     .hamburger{
         display: block;
         color: rgb(255, 255, 255);;
+    }
+
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 280px;
+        height: 268px;
+        text-align: left;
+    }
+    .banner-title{
+        width: 228px;
+        height: 104px;
+        font-size: 28px;
+    }
+    .banner-content-text{
+        width: 219px;
+        height: 76px;
+    }
+    .banner-button{
+        display: flex;
+    }
+    .join-club{
+        width: 135px;
+        height: 43px;
+        font-size: 12px;
+    }
+    .club{
+        display: none;
+    }
+    .download{
+        width: 135px;
+        height: 43px;
+        font-size: 9.7px;
+    }
+    .banner-image img{
+        flex-direction: column;
+        max-width: 349px;
+        max-height: 580px;
+        margin-top: 26.4px;
+        margin-left: 10px;
+        position: relative;
+    }
+    .card-1{
+        margin-left: 10px;
+        top:770px;
+        width: 124px;
+        height: 58px;
+    }
+    .round{
+        font-size: 24px;
+    }
+    .number{
+        font-size: 14px;
+    }
+    .text{
+        font-size: 9px;
+    }
+    .card-2{
+        margin-left: 200px;
+        top: 570px;
+        width: 116px;
+        height: 59px;
+    }
+    .number2{
+        font-size: 24px;
+    }
+    .text2{
+        font-size: 7px;
     }
 
 }
