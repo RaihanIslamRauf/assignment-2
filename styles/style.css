@@ -274,6 +274,48 @@ header{
     margin-bottom: 40px;
 }
 
+/* Unique Section Healthy diet Styles */
+.healthy-diet-container{
+   margin-top: 80px;
+   border-radius: 14.4px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(34, 34, 34); 
+   width: 1250px;
+   height: 500px;
+}  
+.healthy-diet-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-left: 40px;
+}
+.healthy-diet-images img{
+    height: 200px;
+    width: 200px;
+    border-radius: 14.4px;
+}
+.healthy-diet-content{
+    width: 354px;
+    height: 231px;
+    margin-right: 50px;
+}
+.healthy-diet-content h4{
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+.healthy-diet-content h5{
+    margin-top: 0px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11.2px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
 /* Responsive Design for mobile */
 @media screen and (max-width:576px){
    /* navbar */
@@ -387,6 +429,7 @@ header{
        align-items: center;
     }
     .extra-mile-content{
+        margin-bottom: 100px;
         width: 275px;
         height: 50px;
         margin-left: 10px;
@@ -402,5 +445,34 @@ header{
         height: 136px;
         margin-left: 10px;
     }
-    
+    /* Unique Section Healthy Diet */
+    .healthy-diet-container{
+        flex-direction: column;
+        width: 353px;
+        height: 500px;
+        justify-items: center;
+        align-items: center;
+    }
+    .healthy-diet-content{
+        width: 275px;
+        height: 50px;
+        margin-left: 40px;
+        margin-bottom: 300px;
+    }
+    .healthy-diet-content h4{
+        font-size: 25px;
+    }
+    .healthy-diet-images{
+        margin-top: 30px;
+        margin-left: -5px;
+    }
+    .healthy-diet-images img{
+        width: 120px;
+        height: 100px;
+        justify-items: center;
+        align-items: center;
+    }
+    .here{
+        display: none;
+    }
 }
