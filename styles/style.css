@@ -450,6 +450,8 @@ input{
     border-radius: 14.4px;
     background: rgba(255, 255, 255, 0.1);
     gap: 16px;
+    margin-bottom: 80px;
+    
 }
 .team-members{
     position: relative;
@@ -476,6 +478,84 @@ input{
     font-weight: 600;
 
 }
+
+/* fitness footer section */
+.footer-container-main{
+    width: 100%;
+    height: 391px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-content1{
+    width: 354px;
+    height: 140px;
+}
+.footer-content1 h1{
+    margin-top: -20px;
+    font-size: 56px;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    font-weight: 800;
+}
+.footer-content1 h6{
+    margin-top: -30px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11.2px;
+}
+.footer-content2 h5{
+    font-weight: 700;
+    font-size: 25.6px;
+    color: rgb(255, 255, 255);
+}
+.footer-content3 h5{
+    font-weight: 700;
+    font-size: 25.6px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-content2 p{
+    font-size: 18.4px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.footer-content3 p{
+    font-size: 18.4px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+
+.footer-text{
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 50px;
+    flex-direction: column;
+}
+
+.color{
+    background: rgba(255, 255, 255, 0.1);
+   
+}
+hr{ 
+    margin-top: 2%;
+    width: 61%;
+    color:rgba(255, 255, 255, 0.1);
+}
+.footer-container-main h3{
+    margin-top: 2%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* Responsive Design for mobile */
 @media screen and (max-width:576px){
    /* navbar */
@@ -702,4 +782,20 @@ input{
         width: 250px;
         height: 217px;
     } 
+    /* footer styles */
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container-main{
+        height: 790px;
+    }
+    .footer-content1{
+        margin-top: 40px;
+        width: 253px;
+        height: 160px;
+        margin-bottom: -30px;
+    }
+    .footer-content2, .footer-content3{
+        margin-left: -100px;
+    }
 }
